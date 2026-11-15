@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><title>BankGuard · проверка ширины</title>
+<style>body{margin:0;background:#303842;color:white;font:14px Arial}header{padding:12px;display:flex;gap:12px;align-items:center}iframe{display:block;height:850px;border:0;margin:0 auto;background:#0a1118}button,select{padding:8px}</style>
+<header><label>Ширина макета <select id="width"><option>390</option><option>1440</option></select></label><span>Проверка CSS в iframe, без эмуляции устройства</span></header>
+<iframe title="BankGuard" id="preview" src="/" width="390"></iframe>
+<script>document.querySelector('#width').onchange=e=>document.querySelector('#preview').width=e.target.value;</script></html>
